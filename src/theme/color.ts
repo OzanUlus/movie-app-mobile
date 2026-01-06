@@ -4,7 +4,8 @@ const colors = {
   borderColor: "#BDE8F5",
   activeColor: "#60a5fa",
   inActiveColor: "#94a3b8",
-  buttonColor: "#2663eb"
+  buttonColor: "#2663eb",
+  movieBacgroundColor: "#111827"
 };
 
 export default colors;
