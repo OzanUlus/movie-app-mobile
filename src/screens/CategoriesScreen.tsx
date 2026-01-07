@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import colors from '../theme/color'
 import CATEGORİES from '../constants/categories'
 import { s, vs } from 'react-native-size-matters'
-import searchMovies, { OmdSearchItem } from '../api/omdb'
+import { searchMovies, OmdSearchItem } from '../api/omdb'
 import MovieCard from '../components/MovieCard'
 import CustomLoading from '../components/CustomLoading'
 
