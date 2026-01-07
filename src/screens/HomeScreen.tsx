@@ -5,6 +5,7 @@ import { s, vs } from 'react-native-size-matters'
 import { useEffect, useState } from 'react';
 import searchMovies, { OmdSearchItem } from '../api/omdb';
 import MovieCard from '../components/MovieCard';
+import CustomLoading from '../components/CustomLoading';
 
 
 
@@ -105,18 +106,7 @@ const HomeScreen = () => {
                 </Pressable>
             </View>
             {loader ? (
-                <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-                    <ActivityIndicator size={"large"} />
-                    <Text
-                        style={{
-                            color: colors.textColor,
-                            marginTop: vs(4),
-                            textAlign: "center"
-                        }}>
-                        Loading
-                    </Text>
-                </View>
-
+               <CustomLoading />
             ) :
                 error ? (
                     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
