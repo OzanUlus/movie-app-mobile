@@ -39,7 +39,7 @@ export async function searchMovies(query: string, page: number = 1) {
     const url = `${API_BASE}?apikey=${API_KEY}&s=${encodeURIComponent(query)}&page=${page}`;
     const response = await fetch(url);
     const data = await response.json();
-   console.log(data)
+   
    return data
   } catch (error) {
     console.log("Failed to fetch movies");
@@ -56,7 +56,7 @@ export async function getMovieDetails(imdbId: string) {
     const url = `${API_BASE}?apikey=${API_KEY}&i=${encodeURIComponent(imdbId)}&plot=full`;
     const response = await fetch(url);
     const data = await response.json();
-   console.log(data)
+   
    return data
   } catch (error) {
     console.log("Failed to fetch movie details");
